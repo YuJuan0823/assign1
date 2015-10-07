@@ -53,9 +53,9 @@ void draw() {
   set(640-a,0,bg2);
   
   //hp bar
-  strokeWeight(30);
+  strokeWeight(25);
   stroke(255,0,0);
-  line(25,10,l,10);
+  line(20,15,l,15);
   //hp
   image(img1,0,0);
   //fighter
