@@ -18,10 +18,6 @@ void setup () {
   //enemy y
   b=floor(random(0,419));
   
-  //fighter locate
-  c=floor(random(0,589));
-  d=floor(random(0,429));
-  
   //treasure locate
   e=floor(random(0,599));
   f=floor(random(0,439));
@@ -31,7 +27,7 @@ void setup () {
   img4=loadImage("img/treasure.png");
   
   //fighter
-  image(img3,c,d);
+  image(img3,589,215);
   //treasure
   image(img4,e,f);
   
@@ -58,7 +54,7 @@ void draw() {
   //hp
   image(img1,0,0);
   //fighter
-  image(img3,c,d);
+  image(img3,589,215);
   //treasure
   image(img4,e,f);
   //enemy x
