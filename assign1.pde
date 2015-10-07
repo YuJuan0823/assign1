@@ -13,7 +13,7 @@ void setup () {
   bg2.resize(640,480);
   
   //hp bar
-  l=floor(random(0,200));
+  l=floor(random(0,190));
   
   //enemy y
   b=floor(random(0,419));
