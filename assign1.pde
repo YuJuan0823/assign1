@@ -11,7 +11,7 @@ void setup () {
   bg1.resize(640,480);
   bg2=loadImage("img/bg2.png");
   bg2.resize(640,480);
-  
+
   //hp bar
   l=floor(random(23,190));
   
@@ -38,19 +38,18 @@ void setup () {
 }
 
 void draw() {
-  //loading hp bar & enemy
-  img1=loadImage("img/hp.png");
-  img2=loadImage("img/enemy.png");
-
   //speed setting
   int speedX;
   speedX=floor(random(0,5));
   a+=speedX;
   
   //scrolling background
-  background(bg1);
   set(-a,0,bg1);
   set(640-a,0,bg2);
+  
+  //loading hp & enemy
+  img1=loadImage("img/hp.png");
+  img2=loadImage("img/enemy.png");
   
   //hp bar
   strokeWeight(25);
