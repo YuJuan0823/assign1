@@ -13,7 +13,7 @@ void setup () {
   bg2.resize(640,480);
   
   //hp bar
-  l=floor(random(0,190));
+  l=floor(random(23,190));
   
   //enemy y
   b=floor(random(0,419));
@@ -55,7 +55,7 @@ void draw() {
   //hp bar
   strokeWeight(25);
   stroke(255,0,0);
-  line(23,15,l,15);
+  line(22,15,l,15);
   //hp
   image(img1,0,0);
   //fighter
