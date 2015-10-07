@@ -1,4 +1,4 @@
-preload=
+@pjs preload=
 "img/bg1.png,
 img/bg2.png,
 img/enemy.png,
