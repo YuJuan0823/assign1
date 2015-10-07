@@ -1,3 +1,13 @@
+/* @pjs preload=
+"img/bg1.png,
+img/bg2.png,
+img/enemy.png,
+img/fighter.png,
+img/hp.png,img/
+treasure.png"; */
+
+
+
 int a=20; //enemy x-start
 int b,c,d,e,f; //fighter & treasure location
 int l; //hp bar length
