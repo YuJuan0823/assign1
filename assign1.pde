@@ -7,9 +7,9 @@ PImage img1,img2,img3,img4;
 void setup () {
   size(640,480) ;
   //background loading
-  bg1=loadImage("bg1.png");
+  bg1=loadImage("img/bg1.png");
   bg1.resize(640,480);
-  bg2=loadImage("bg2.png");
+  bg2=loadImage("img/bg2.png");
   bg2.resize(640,480);
   
   //hp bar
@@ -27,8 +27,8 @@ void setup () {
   f=floor(random(0,439));
   
   //loading fighter & treasure
-  img3=loadImage("fighter.png");
-  img4=loadImage("treasure.png");
+  img3=loadImage("img/fighter.png");
+  img4=loadImage("img/treasure.png");
   
   //fighter
   image(img3,c,d);
@@ -39,8 +39,8 @@ void setup () {
 
 void draw() {
   //loading hp bar & enemy
-  img1=loadImage("hp.png");
-  img2=loadImage("enemy.png");
+  img1=loadImage("img/hp.png");
+  img2=loadImage("img/enemy.png");
 
   //speed setting
   int speedX;
