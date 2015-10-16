@@ -1,6 +1,7 @@
 int a=20; //enemy x-start
 int b,c,d,e,f; //fighter & treasure location
 int l; //hp bar length
+int bgx1, bgx2;
 
 PImage bg1,bg2;
 PImage img1,img2,img3,img4;
@@ -40,8 +41,11 @@ void draw() {
   a+=speedX;
   
   //scrolling background
-  set(-a,0,bg1);
-  set(640-a,0,bg2);
+  bgx1=bgx1%1280;
+  bgx1++;
+  image(bg1,bgx1,0);
+  image(bg2,bgx1-640,0);
+  image(bg1,bgx1-1280,0);
   
   //loading hp & enemy
   img1=loadImage("img/hp.png");
